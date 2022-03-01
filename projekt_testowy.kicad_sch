@@ -112,6 +112,26 @@
     (stroke (width 0) (type default) (color 0 0 0 0))
     (uuid 6140af20-22e4-48ac-a2b4-7233783628c2)
   )
+  (wire (pts (xy 129.54 52.07) (xy 129.54 58.42))
+    (stroke (width 0) (type default) (color 0 0 0 0))
+    (uuid 9b3e7db9-6ff4-4808-b847-df743aa59f60)
+  )
+
+  (symbol (lib_id "power:GND") (at 129.54 58.42 0) (unit 1)
+    (in_bom yes) (on_board yes) (fields_autoplaced)
+    (uuid 18fe078b-d967-4c6b-9117-28649814e048)
+    (property "Reference" "#PWR?" (id 0) (at 129.54 64.77 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Value" "GND" (id 1) (at 129.54 63.5 0))
+    (property "Footprint" "" (id 2) (at 129.54 58.42 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Datasheet" "" (id 3) (at 129.54 58.42 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (pin "1" (uuid ea2e338d-b9c8-4965-a217-a9a6c3864d0b))
+  )
 
   (symbol (lib_id "power:+1V0") (at 118.11 52.07 0) (unit 1)
     (in_bom yes) (on_board yes) (fields_autoplaced)
@@ -209,11 +229,30 @@
     (pin "1" (uuid 70fb572d-d5ec-41e7-9482-63d4578b4f47))
   )
 
+  (symbol (lib_id "power:+1V0") (at 129.54 52.07 0) (unit 1)
+    (in_bom yes) (on_board yes) (fields_autoplaced)
+    (uuid e7dee0a0-1bf5-4243-ac45-e9c9a7f48039)
+    (property "Reference" "#PWR?" (id 0) (at 129.54 55.88 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Value" "+1V0" (id 1) (at 129.54 46.99 0))
+    (property "Footprint" "" (id 2) (at 129.54 52.07 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Datasheet" "" (id 3) (at 129.54 52.07 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (pin "1" (uuid 6c58bef7-a109-4acd-b484-5503636af5ac))
+  )
+
   (sheet_instances
     (path "/" (page "1"))
   )
 
   (symbol_instances
+    (path "/18fe078b-d967-4c6b-9117-28649814e048"
+      (reference "#PWR?") (unit 1) (value "GND") (footprint "")
+    )
     (path "/4107ae43-ef7b-4881-bf28-19412946e234"
       (reference "#PWR?") (unit 1) (value "+1V0") (footprint "")
     )
@@ -230,6 +269,9 @@
       (reference "#PWR?") (unit 1) (value "GND") (footprint "")
     )
     (path "/c106154f-d948-43e5-abfa-e1b96055d91b"
+      (reference "#PWR?") (unit 1) (value "+1V0") (footprint "")
+    )
+    (path "/e7dee0a0-1bf5-4243-ac45-e9c9a7f48039"
       (reference "#PWR?") (unit 1) (value "+1V0") (footprint "")
     )
   )
