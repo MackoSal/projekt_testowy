@@ -100,6 +100,10 @@
   )
 
 
+  (wire (pts (xy 118.11 52.07) (xy 118.11 58.42))
+    (stroke (width 0) (type default) (color 0 0 0 0))
+    (uuid 25b61c92-3315-4800-8495-82c6c5c4f472)
+  )
   (wire (pts (xy 88.9 53.34) (xy 88.9 59.69))
     (stroke (width 0) (type default) (color 0 0 0 0))
     (uuid 5f147dbc-8839-4259-84a6-550f161d5db4)
@@ -107,6 +111,22 @@
   (wire (pts (xy 105.41 52.07) (xy 105.41 58.42))
     (stroke (width 0) (type default) (color 0 0 0 0))
     (uuid 6140af20-22e4-48ac-a2b4-7233783628c2)
+  )
+
+  (symbol (lib_id "power:+1V0") (at 118.11 52.07 0) (unit 1)
+    (in_bom yes) (on_board yes) (fields_autoplaced)
+    (uuid 4107ae43-ef7b-4881-bf28-19412946e234)
+    (property "Reference" "#PWR?" (id 0) (at 118.11 55.88 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Value" "+1V0" (id 1) (at 118.11 46.99 0))
+    (property "Footprint" "" (id 2) (at 118.11 52.07 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Datasheet" "" (id 3) (at 118.11 52.07 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (pin "1" (uuid 8d04db28-587f-40ce-88ca-5f8fa78962a8))
   )
 
   (symbol (lib_id "power:+1V0") (at 105.41 52.07 0) (unit 1)
@@ -157,6 +177,22 @@
     (pin "1" (uuid b1000fa4-8405-4913-bb2a-3a576510c1f7))
   )
 
+  (symbol (lib_id "power:GND") (at 118.11 58.42 0) (unit 1)
+    (in_bom yes) (on_board yes) (fields_autoplaced)
+    (uuid b1ee61f1-2d36-448d-8eca-a89ce8991ff8)
+    (property "Reference" "#PWR?" (id 0) (at 118.11 64.77 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Value" "GND" (id 1) (at 118.11 63.5 0))
+    (property "Footprint" "" (id 2) (at 118.11 58.42 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Datasheet" "" (id 3) (at 118.11 58.42 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (pin "1" (uuid 69cdd0d8-522b-4693-aa44-8c2d93247b48))
+  )
+
   (symbol (lib_id "power:+1V0") (at 88.9 53.34 0) (unit 1)
     (in_bom yes) (on_board yes) (fields_autoplaced)
     (uuid c106154f-d948-43e5-abfa-e1b96055d91b)
@@ -178,6 +214,9 @@
   )
 
   (symbol_instances
+    (path "/4107ae43-ef7b-4881-bf28-19412946e234"
+      (reference "#PWR?") (unit 1) (value "+1V0") (footprint "")
+    )
     (path "/7a89709d-a8cb-4a64-a3a3-ed263fad27d0"
       (reference "#PWR?") (unit 1) (value "+1V0") (footprint "")
     )
@@ -185,6 +224,9 @@
       (reference "#PWR?") (unit 1) (value "GND") (footprint "")
     )
     (path "/9cf04930-92e2-4361-96fe-0e85f3c4b63b"
+      (reference "#PWR?") (unit 1) (value "GND") (footprint "")
+    )
+    (path "/b1ee61f1-2d36-448d-8eca-a89ce8991ff8"
       (reference "#PWR?") (unit 1) (value "GND") (footprint "")
     )
     (path "/c106154f-d948-43e5-abfa-e1b96055d91b"
